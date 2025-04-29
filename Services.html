@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+    body {
+      font-family: 'Anton', sans-serif;
+    }
+    /* Microanimation for header links */
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+      color: #ffffff;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 50%;
+      background-color: #ffffff;
+      transition: width 0.3s ease, left 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover {
+      color: #cccccc;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+    }
+    .logo-font {
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 0.15em;
+    }
+  </style>
+</head>
+<body class="bg-[#051650] font-sans">
+  <!-- Header -->
+  <header class="flex justify-between items-center py-8 px-8 max-w-full">
+    <h1 class="text-4xl font-extrabold cursor-default select-none logo-font tracking-tight ml-0">
+      <span class="text-[#FFC857]">App</span><span class="text-white">Dice</span>
+    </h1>
+    <nav class="space-x-6 hidden md:flex mr-6">
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="index (1).html">
+        Home
+      </a>
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="About Us.html">
+        About Us
+      </a>
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide active" href="Services.html">
+        Services
+      </a>
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="podcast.html">
+        Podcast
+      </a>
+    </nav>
+  </header>
+
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <h1
+      class="text-[96px] leading-[1] font-['Anton'] font-extrabold text-white max-w-[400px]"
+    >
+      OUR<br />SERVICES
+    </h1>
+    <p class="text-white text-lg max-w-xl mt-6 font-semibold">
+      Everything. Everywhere. All At Once.
+    </p>
+    <button
+      class="mt-12 inline-flex items-center gap-2 border border-white rounded-full px-8 py-4 text-white font-semibold text-sm font-['Anton'] hover:bg-white hover:text-[#051650] transition"
+      type="button"
+    >
+      coustomised services <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <div class="mt-20 max-w-4xl">
+      <div
+        class="border-t border-white pt-6 pb-6 text-white font-semibold font-['Anton'] text-lg select-none"
+      >
+        <div
+          id="faq-header"
+          class="flex justify-between items-center cursor-pointer"
+          onclick="toggleFaq()"
+          role="button"
+          aria-expanded="false"
+          aria-controls="faq-content"
+          tabindex="0"
+          onkeydown="if(event.key==='Enter' || event.key===' ') toggleFaq()"
+        >
+          <span>chatAi</span>
+          <span id="faq-icon" class="text-3xl leading-none select-none">+</span>
+        </div>
+        <div id="faq-content" class="mt-2 text-white font-normal text-base max-w-xl hidden">
+          <p>
+            Personalised , Psychologically Trained Chatbots For Converting Your Leads Into Coustomers & Coustomers To Loyality.
+          </p>
+          <a
+            href="https://chatai-main.lovable.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block mt-4 px-4 py-2 border border-white rounded text-white text-sm font-['Anton'] hover:bg-white hover:text-[#051650] transition"
+          >
+            Visit chatAi
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleFaq() {
+      const content = document.getElementById('faq-content');
+      const icon = document.getElementById('faq-icon');
+      const header = document.getElementById('faq-header');
+      const isHidden = content.classList.contains('hidden');
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+        header.setAttribute('aria-expanded', 'true');
+      } else {
+        content.classList.add('hidden');
+        icon.textContent = '+';
+        header.setAttribute('aria-expanded', 'false');
+      }
+    }
+  </script>
+</body>
+</html>

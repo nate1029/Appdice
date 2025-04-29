@@ -1,0 +1,182 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   AppDice
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+   body {
+     font-family: 'Anton', sans-serif;
+   }
+   /* Microanimation for header links */
+   .nav-link {
+     position: relative;
+     transition: color 0.3s ease;
+     color: #ffffff;
+   }
+   .nav-link::after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: -4px;
+     left: 50%;
+     background-color: #ffffff;
+     transition: width 0.3s ease, left 0.3s ease;
+     border-radius: 2px;
+   }
+   .nav-link:hover {
+     color: #cccccc;
+   }
+   .nav-link:hover::after {
+     width: 100%;
+     left: 0;
+   }
+  </style>
+ </head>
+ <body class="bg-[#051650] min-h-screen flex flex-col relative overflow-x-hidden">
+  <!-- Header -->
+  <header class="flex justify-between items-center py-8 px-8 max-w-full">
+   <h1 class="text-4xl font-extrabold cursor-default select-none logo-font tracking-tight ml-0">
+    <span class="text-[#FFC857]">App</span><span class="text-white">Dice</span>
+   </h1>
+   <nav class="space-x-6 hidden md:flex mr-6">
+    <a class="nav-link text-lg font-semibold uppercase tracking-wide active" href="index (1).html">
+     Home
+    </a>
+    <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="About Us.html">
+     About Us
+    </a>
+    <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="Services.html">
+     Services
+    </a>
+    <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="podcast.html">
+     Podcast
+    </a>
+   </nav>
+  </header>
+  <!-- Spacer to prevent content behind fixed header -->
+  <div class="h-20"></div>
+  <!-- Top left circle -->
+  <div class="absolute top-6 left-6 w-6 h-6 border border-white rounded-full">
+  </div>
+  <!-- Top right circle with slash -->
+  <div class="absolute top-6 right-6 w-6 h-6 border border-white rounded-full flex justify-center items-center">
+   <div class="w-[1.5px] h-6 bg-white rotate-45">
+   </div>
+  </div>
+  <!-- Left vertical barcode lines -->
+  <div class="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col space-y-[1px]">
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-6 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-5 bg-white">
+   </div>
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-7 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-4 bg-white">
+   </div>
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-6 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-5 bg-white">
+   </div>
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-7 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-4 bg-white">
+   </div>
+  </div>
+  <!-- Right vertical barcode lines -->
+  <div class="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col space-y-[1px]">
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-6 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-5 bg-white">
+   </div>
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-7 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-4 bg-white">
+   </div>
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-6 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-5 bg-white">
+   </div>
+   <div class="w-[1.5px] h-3 bg-white">
+   </div>
+   <div class="w-[1.5px] h-7 bg-white">
+   </div>
+   <div class="w-[1.5px] h-2 bg-white">
+   </div>
+   <div class="w-[1.5px] h-4 bg-white">
+   </div>
+  </div>
+  <!-- Bottom left crossed circles -->
+  <div class="absolute bottom-6 left-6 w-6 h-6 border border-white rounded-full relative">
+   <div class="absolute inset-0 border border-white rounded-full -translate-x-1.5 -translate-y-1.5">
+   </div>
+  </div>
+  <!-- Bottom right small circle -->
+  <div class="absolute bottom-6 right-6 w-5 h-5 bg-white rounded-full">
+  </div>
+  <!-- Center content -->
+  <div class="flex flex-col items-center max-w-[90vw] mx-auto text-center">
+   <!-- Top logo: skull inside ellipse -->
+   <div class="mb-6 relative w-[160px] h-[80px] mx-auto">
+    <img alt="Black skull inside an ellipse logo" class="w-full h-full object-contain" height="80" src="C:\Users\Naiteek\Downloads\WEBDICE\logooo.png" width="160"/>
+   </div>
+   <!-- AppDice text with colored "App" -->
+   <h1 class="text-[120px] leading-[1] font-extrabold tracking-tight select-none">
+    <span class="text-[#FFC857]">App</span><span class="text-white">Dice</span>
+   </h1>
+   <!-- Description text with part colored -->
+   <p class="text-white text-[18px] font-sans max-w-[600px] mt-6 leading-snug font-normal">
+    With the vision of Redefining <span class="text-[#FFC857]">Tech in Automation Industries</span>
+   </p>
+   <!-- Social icons row -->
+   <div class="flex justify-center space-x-6 mt-8 mb-12">
+    <a class="relative w-14 h-14 rounded-full bg-white/10 flex justify-center items-center shadow-[0_0_10px_#00000080]" href="https://www.linkedin.com/company/appdice" target="_blank" rel="noopener noreferrer">
+     <i class="fab fa-linkedin-in text-white text-xl">
+     </i>
+    </a>
+    <a class="relative w-14 h-14 rounded-full bg-white/10 flex justify-center items-center shadow-[0_0_10px_#00000080]" href="https://www.instagram.com/appdice/" target="_blank" rel="noopener noreferrer">
+     <i class="fab fa-instagram text-white text-xl">
+     </i>
+    </a>
+    <a class="relative w-14 h-14 rounded-full bg-white/10 flex justify-center items-center shadow-[0_0_10px_#00000080]" href="https://www.youtube.com/@AppDice" target="_blank" rel="noopener noreferrer">
+     <i class="fab fa-youtube text-white text-xl">
+     </i>
+    </a>
+   </div>
+  </div>
+ </body>
+</html>

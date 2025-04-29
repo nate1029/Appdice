@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>AppDice - Podcast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    body {
+      font-family: 'Anton', sans-serif;
+      background-color: #051650;
+      color: #ffffff;
+    }
+    .font-anton {
+      font-family: 'Anton', sans-serif;
+    }
+    .font-opensans {
+      font-family: 'Open Sans', sans-serif;
+    }
+    /* Microanimation for header links */
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+      color: #ffffff;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 50%;
+      background-color: #ffffff;
+      transition: width 0.3s ease, left 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover {
+      color: #cccccc;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+    }
+    .logo-font {
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 0.15em;
+    }
+  </style>
+</head>
+<body class="bg-[#051650] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex justify-between items-center py-8 px-8 max-w-full">
+    <h1 class="text-4xl font-extrabold cursor-default select-none logo-font tracking-tight ml-0">
+      <span class="text-[#FFC857]">App</span><span class="text-white">Dice</span>
+    </h1>
+    <nav class="space-x-6 hidden md:flex mr-6">
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="index (1).html">
+        Home
+      </a>
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="About Us.html">
+        About Us
+      </a>
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide" href="Services.html">
+        Services
+      </a>
+      <a class="nav-link text-lg font-semibold uppercase tracking-wide active" href="podcast.html">
+        Podcast
+      </a>
+    </nav>
+  </header>
+
+  <div class="flex-grow flex flex-col items-center justify-center px-4 text-center text-white">
+    <h1 class="font-anton text-[6rem] md:text-[8rem] leading-[1] mb-6">
+      COMING SOON
+    </h1>
+    <p class="font-opensans text-lg max-w-xl mb-12">
+      We are working hard to bring you something amazing. Stay tuned and be part of the journey.
+    </p>
+    <a href="https://www.instagram.com/appdice/" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-[#051650] font-anton text-xl px-10 py-4 rounded-full hover:opacity-80 transition-opacity duration-300">
+      Notify Me
+    </a>
+  </div>
+</body>
+</html>
